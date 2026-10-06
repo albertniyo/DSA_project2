@@ -67,6 +67,6 @@ patient extract_max(patient a[], int *n) {
 void display_heap(const patient a[], int n) {
     puts("Heap Array ");
     for (int i=0; i < n; i++) {
-        printf("%c - %s - %s - %d\n", i, a[i].id, a[i].name, a[i].priority);
+        printf("%d - %s - %s - %d\n", i, a[i].id, a[i].name, a[i].priority);
     }
 }

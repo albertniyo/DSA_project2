@@ -10,9 +10,9 @@ int main() {
     };
 
     int n = 7;
-    build_maxheap(heap, n);
 
     puts("Starting array: ");
+    build_maxheap(heap, n);
     display_heap(heap, n);
 
     patient copy[10];
