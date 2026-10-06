@@ -11,9 +11,6 @@ int main() {
 
     int n = 11;
 
-    puts("Starting array: ");
-    display_heap(heap, n);
-
     build_maxheap(heap, n);
 
     puts("Max-heap after build: ");
@@ -22,12 +19,11 @@ int main() {
     // adding a new luggage
     baggage new = {'X', 100};
     insert_luggage(heap, &n, new);
-    printf("Max heap after inserting luggage %c:%d\n", new.id, new.priority);
+    puts("\nMax-Heap after inserting X:100");
     display_heap(heap, n);
 
-    // remowing a luggage
     baggage removed = heap_del(heap, &n);
-    printf("Remove luggage %c:%d\n", removed.id, removed.priority);
+    printf("\nMax-Heap after removing %c:%d\n", removed.id, removed.priority);
     display_heap(heap, n);
     
     return 0;
